@@ -189,7 +189,6 @@ input:checked:last-of-type ~ .sheet-arrows label:first-child:not(:only-child) {
   transition: opacity var(--sheet-duration) var(--sheet-timing);
   pointer-events: var(--ss-i, none);
 }
-
 .sheet-vertical {
   --ss-initial-arrow-r: 90;
   --ss-flex-direction: column;

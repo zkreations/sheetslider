@@ -1,4 +1,5 @@
-// Create slider arrows
+@use "../abstracts/variables";
+
 .sheet {
   &-arrows {
     position: absolute;
@@ -9,8 +10,8 @@
     flex-direction: var(--ss-flex-direction, row);
 
     label {
-      padding: var(--sheet-arrow-padding, #{$arrow-padding});
-      background-color: var(--sheet-arrow-bg, #{$arrow-bg});
+      padding: var(--sheet-arrow-padding, variables.$arrow-padding);
+      background-color: var(--sheet-arrow-bg, variables.$arrow-bg);
       display: var(--ss-arrow-r, none);
       transition: opacity calc(var(--sheet-duration) * .5);
       cursor: pointer;
@@ -22,7 +23,7 @@
       &::before {
         content: "";
         transform: rotate(calc((var(--ss-initial-arrow-r, 0) + var(--ss-arrow-r)) * 1deg));
-        background-image: var(--sheet-arrow, #{$arrow-svg});
+        background-image: var(--sheet-arrow, variables.$arrow-svg);
         width: var(--sheet-arrow-size);
         height: var(--sheet-arrow-size);
         transition: background-color var(--sheet-duration);

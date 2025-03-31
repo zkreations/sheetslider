@@ -1,4 +1,5 @@
-// Create SheetEngine
+@use "../abstracts/variables";
+
 %active-item {
   --ss-active: 1;
 }
@@ -13,7 +14,7 @@
 
 // Code that moves the slider
 .sheet {
-  @for $i from 1 through ($slider-items) {
+  @for $i from 1 through (variables.$slider-items) {
     // Set the current slide
     input:nth-child(#{$i}):checked ~ &-content {
       --ss-i: #{$i};
@@ -33,7 +34,7 @@
       }
 
       // Right arrow
-      @if  $i != $slider-items {
+      @if  $i != variables.$slider-items {
         > :nth-child(#{$i + 1}) {
           @extend %right-arrow;
         }
@@ -52,6 +53,6 @@
   @at-root input:checked:last-of-type ~ &-arrows label:first-child:not(:only-child) {
     --ss-arrow-r: 180;
 
-    order: $slider-items;
+    order: variables.$slider-items;
   }
 }

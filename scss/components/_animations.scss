@@ -1,5 +1,3 @@
-
-// Fade animation
 .sheet {
   &-fade &-item {
     position: absolute;
@@ -7,5 +5,14 @@
     opacity: var(--ss-active, 0);
     transition: opacity var(--sheet-duration) var(--sheet-timing);
     pointer-events: var(--ss-i, none);
+  }
+
+  &-vertical {
+    --ss-initial-arrow-r: 90;
+    --ss-flex-direction: column;
+  }
+
+  &-vertical &-content {
+    transform: translate3d(0, calc((var(--ss-i,0) - 1) * -100%), 0);
   }
 }

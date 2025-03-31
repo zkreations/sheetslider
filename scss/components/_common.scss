@@ -1,3 +1,4 @@
+@use "../abstracts/variables";
 
 // Prefix
 // Variables with the prefix "--sheet" are safe to modify
@@ -5,16 +6,16 @@
 
 .sheet {
   // You can change these variables
-  --sheet-accent: #{$main-color};
-  --sheet-space: #{$main-space};
-  --sheet-arrow-size: #{$arrow-size};
-  --sheet-duration: #{$transition-duration};
-  --sheet-dot-size: #{$dots-size};
-  --sheet-timing: #{$transition-timing};
+  --sheet-accent: #{variables.$main-color};
+  --sheet-space: #{variables.$main-space};
+  --sheet-arrow-size: #{variables.$arrow-size};
+  --sheet-duration: #{variables.$transition-duration};
+  --sheet-dot-size: #{variables.$dots-size};
+  --sheet-timing: #{variables.$transition-timing};
 
   overflow: hidden;
   position: relative;
-  aspect-ratio: var(--sheet-ratio, #{$main-ratio});
+  aspect-ratio: var(--sheet-ratio, 21/9);
 
   input {
     display: none;

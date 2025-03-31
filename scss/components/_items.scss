@@ -1,4 +1,5 @@
-// Create slider items
+@use "../abstracts/variables";
+
 .sheet {
   &-item {
     overflow: hidden;
@@ -10,9 +11,9 @@
   }
 
   &-meta {
-    font-weight: $font-weight;
-    color: var(--sheet-text-color, #{$text-color});
-    text-shadow: var(--sheet-text-shadow, #{$text-shadow});
+    font-weight: variables.$font-weight;
+    color: var(--sheet-text-color, variables.$text-color);
+    text-shadow: var(--sheet-text-shadow, variables.$text-shadow);
     position: absolute;
     top: var(--sheet-space);
     left: var(--sheet-space);
@@ -36,11 +37,11 @@
   }
 
   &-title {
-    font-size: var(--sheet-title-size, #{$title-size});
+    font-size: var(--sheet-title-size, variables.$title-size);
   }
 
   &-text {
-    font-size: var(--sheet-text-size, #{$text-size});
+    font-size: var(--sheet-text-size, variables.$text-size);
   }
 }
 
