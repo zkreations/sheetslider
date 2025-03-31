@@ -1,13 +1,13 @@
 <div align="center">
-  <img width='50' src="https://raw.githubusercontent.com/zkreations/SheetSlider/master/.github/logo.png" align="center" />
+  <img width='50' src="https://raw.githubusercontent.com/zkreations/sheetslider/master/.github/logo.png" align="center" />
 
   # SheetSlider
 
   <p>A pure CSS slider with no dependencies. Designed to be as lightweight and fast as possible.<p>
 
-  <p><a href="https://zkreations.github.io/SheetSlider/"><strong> Live Demo &rarr;</strong></a></p>
+  <p><a href="https://zkreations.github.io/sheetslider/"><strong> Live Demo &rarr;</strong></a></p>
 
-  <img src="https://raw.githubusercontent.com/zkreations/SheetSlider/master/.github/screenshot.png" align="center" />
+  <img src="https://raw.githubusercontent.com/zkreations/sheetslider/master/.github/screenshot.png" align="center" />
 </div>
 
 ## Features
@@ -64,7 +64,7 @@ The slider only needs a basic HTML structure to work:
 </div>
 ```
 
-All content inside the `sheet-item` elements will be the ones that move. They don't necessarily have to be images, they can be any HTML element. 
+All content inside the `sheet-item` elements will be the ones that move. They don't necessarily have to be images, they can be any HTML element.
 
 The slider also has two optional elements, which are the navigation buttons and the descriptive texts. If you include them, the structure would look like this:
 
@@ -118,7 +118,7 @@ The slider also has two optional elements, which are the navigation buttons and 
 
 ## Customize
 
-Define new values for the variables in your CSS file or in the `:root` selector. 
+Define new values for the variables in your CSS file or in the `:root` selector.
 
 | Variable                | Description
 | ----------------------- | -------------
